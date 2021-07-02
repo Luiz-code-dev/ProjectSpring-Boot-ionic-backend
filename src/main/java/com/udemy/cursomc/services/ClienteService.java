@@ -19,7 +19,4 @@ public class ClienteService {
 			return obj.orElse(null); 
 		}
 
-		public Cliente buscar(Integer id) {
-			return null;
-		}
 }

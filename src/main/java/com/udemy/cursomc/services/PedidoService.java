@@ -18,8 +18,4 @@ public class PedidoService {
 			 Optional<Pedido> obj = repo.findById(id);
 			return obj.orElse(null); 
 		}
-
-		public Pedido buscar(Integer id) {
-			return null;
-		}
 }

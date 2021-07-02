@@ -18,13 +18,14 @@ public class CategoriaService {
 			 Optional<Categoria> obj = repo.findById(id);
 			return obj.orElse(null); 
 		}
-
-		public Categoria buscar(Integer id) {
-			return null;
-		}
 		
 		public Categoria insert(Categoria obj) {
 			obj.setId(null);
+			return repo.save(obj);
+		}
+		
+		public Categoria update(Categoria obj) {
+			find(obj.getId());
 			return repo.save(obj);
 		}
 }
