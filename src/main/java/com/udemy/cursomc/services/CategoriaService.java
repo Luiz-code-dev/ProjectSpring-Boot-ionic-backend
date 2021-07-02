@@ -22,4 +22,9 @@ public class CategoriaService {
 		public Categoria buscar(Integer id) {
 			return null;
 		}
+		
+		public Categoria insert(Categoria obj) {
+			obj.setId(null);
+			return repo.save(obj);
+		}
 }
