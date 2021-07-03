@@ -15,7 +15,7 @@ public class ValidationError extends StandardError {
 	}
 
 
-	public List<FieldMessage> getList() {
+	public List<FieldMessage> getErros() {
 		return errors;
 	}
 
