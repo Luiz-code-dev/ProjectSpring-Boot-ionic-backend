@@ -23,7 +23,7 @@ import com.udemy.cursomc.dto.ClienteNewDTO;
 import com.udemy.cursomc.services.ClienteService;
 
 @RestController
-@RequestMapping(value="/cliente")
+@RequestMapping(value="/clientes")
 public class ClienteResource {
 	
 	@Autowired
