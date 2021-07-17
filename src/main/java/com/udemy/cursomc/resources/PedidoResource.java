@@ -12,7 +12,7 @@ import com.udemy.cursomc.services.PedidoService;
 
 
 @RestController
-@RequestMapping(value="/pedido")
+@RequestMapping(value="/pedidos")
 public class PedidoResource {
 	
 	@Autowired
