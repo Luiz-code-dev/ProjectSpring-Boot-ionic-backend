@@ -36,7 +36,7 @@ private static final String[] PUBLIC_MATCHERS_GET = {
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		if (Arrays.asList(env.getActiveProfiles()).contains("dev")) {
+		if (Arrays.asList(env.getActiveProfiles()).contains("test")) {
 			http.headers().frameOptions().disable();
 		}
 		http.cors().and().csrf().disable();
