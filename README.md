@@ -1,7 +1,7 @@
 # ProjectSpring-Boot-ionic-backend
 
 <h2>VISÃO FUNCIONAL:</h2>
-Neste projeto você vai aprender a construir login, cadastro de usuário, fluxo completo de navegação de carrinho de compras, fluxo de fechamento de pedido, tela de perfil de usuário com envio de foto tanto pela câmera quanto pela galeria.
+Foi contruido um login com cadastro de usuário, fluxo completo de navegação de carrinho de compras, fluxo de fechamento de pedido, tela de perfil de usuário com envio de foto tanto pela câmera quanto pela galeria.
 
 <h2>VISÃO TÉCNICA - BACK END:</h2>
 API Rest usando Java com Spring Boot e banco de dados MySQL. Usando JPA com Hibernate para mapeamento objeto-relacional, envio de email com SMTP da Google, armazenamento de imagens com storage S3 da Amazon, autenticação e autorização com tokens JWT, e implantação na nuvem usando a plataforma Heroku. validação de dados, tratamento de exceções, uso adequado do protocolo HTTP no padrão REST, segurança, CORS.
