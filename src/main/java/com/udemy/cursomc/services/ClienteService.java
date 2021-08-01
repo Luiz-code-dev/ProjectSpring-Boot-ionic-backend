@@ -1,7 +1,6 @@
 package com.udemy.cursomc.services;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -14,12 +13,15 @@ import org.springframework.stereotype.Service;
 import com.udemy.cursomc.domain.Cidade;
 import com.udemy.cursomc.domain.Cliente;
 import com.udemy.cursomc.domain.Endereco;
+import com.udemy.cursomc.domain.enums.Perfil;
 import com.udemy.cursomc.domain.enums.TipoCliente;
 import com.udemy.cursomc.dto.ClienteDTO;
 import com.udemy.cursomc.dto.ClienteNewDTO;
 import com.udemy.cursomc.repositories.CidadeRepository;
 import com.udemy.cursomc.repositories.ClienteRepository;
 import com.udemy.cursomc.repositories.EnderecoRepository;
+import com.udemy.cursomc.security.UserSS;
+import com.udemy.cursomc.services.exceptions.AuthorizationException;
 import com.udemy.cursomc.services.exceptions.DataIntegrityException;
 
 @Service
@@ -39,8 +41,12 @@ public class ClienteService {
 		
 		
 		public Cliente find(Integer id) {
-			Optional<Cliente> obj = repo.findById(id);
-			return obj.orElse(null); 
+			
+			UserSS user = UserService.authenticated();
+			if (user==null || user.hasRole(Perfil.ADMIN) &&  !id.equals(user.getId())); {
+				throw new AuthorizationException("Acesso negado");
+			}
+			
 		}
 		
 		public Cliente insert(Cliente obj) {
