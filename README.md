@@ -1,4 +1,9 @@
-# ProjectSpring-Boot-ionic-backend
+# Project Spring-Boot-ionic-backend
+<h1>Tecnologias utilizadas</h1>
+Java 11<b>
+SpringBoot 2.5.1<b>
+Maven 4.0<b>
+SQLServer<b>
 
 <h2>VISÃO FUNCIONAL:</h2>
 Foi construido um login com cadastro de usuário, fluxo completo de navegação de carrinho de compras, fluxo de fechamento de pedido, tela de perfil de usuário com envio de foto tanto pela câmera quanto pela galeria.
