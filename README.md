@@ -4,6 +4,8 @@ Java 11<p>
 SpringBoot 2.5.1<p>
 Maven 4.0<p>
 SQLServer<p>
+Angular<p>
+Ionic<p>
 
 <h2>VISÃO FUNCIONAL:</h2>
 Foi construido um login com cadastro de usuário, fluxo completo de navegação de carrinho de compras, fluxo de fechamento de pedido, tela de perfil de usuário com envio de foto tanto pela câmera quanto pela galeria.
